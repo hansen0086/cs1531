@@ -1,0 +1,7 @@
+the reflection of comp1531.
+
+if we have to re-implement this application, we are going to have two improvements. 
+
+The first improvement is that we should build the classes for this application in the very beginning of the development instead of after completing the first iteration. Using classes ealier would make it into a higher cohesion and lower coupling program so that we didn't have to change too much in the interation2.
+
+Another improvement we would make is that we should have built more functions in the classes. An example is that we should have a function to insert new element into the table rather than inserting the data manually. This will make our code more readable and more mainable.

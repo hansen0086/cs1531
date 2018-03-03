@@ -1,7 +1,7 @@
 from flask import Flask, redirect, render_template, request, url_for
 from server import app, user_input
 import csv
-from csv_fn import *
+from csv_fun import *
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
@@ -19,7 +19,6 @@ def index():
 
 @app.route("/Hello")
 def hello():
-    print_from_csv("example.csv")
+    user_list = print_from_csv("example.csv")
     
-    return render_template("hello.html", all_users=user_input) 
-
+    return render_template("hello.html", all_users=user_list) 
